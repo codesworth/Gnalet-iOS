@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13740754CB8950D224EF20B7 /* Pods_CWGNALETTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3BC0DF58DE62FD82AA6CDA /* Pods_CWGNALETTests.framework */; };
+		184861038BD41D2FEC950866 /* Pods_CWGNALETUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B07A5FA61FA92492A14F9F1 /* Pods_CWGNALETUITests.framework */; };
+		9C85CDDBBAF81AB3DE22CC5A /* Pods_CWGNALET.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D201821C5C4E0E1CE5EB5970 /* Pods_CWGNALET.framework */; };
+		C4891A1020138722003D4DC1 /* RequestVCR.m in Sources */ = {isa = PBXBuildFile; fileRef = C4891A0F20138722003D4DC1 /* RequestVCR.m */; };
 		C4D0A90F1F9D04A30092E513 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D0A90E1F9D04A30092E513 /* AppDelegate.m */; };
 		C4D0A9121F9D04A30092E513 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D0A9111F9D04A30092E513 /* ViewController.m */; };
 		C4D0A9151F9D04A30092E513 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4D0A9131F9D04A30092E513 /* Main.storyboard */; };
@@ -15,6 +19,16 @@
 		C4D0A91D1F9D04A30092E513 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D0A91C1F9D04A30092E513 /* main.m */; };
 		C4D0A9271F9D04A30092E513 /* CWGNALETTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D0A9261F9D04A30092E513 /* CWGNALETTests.m */; };
 		C4D0A9321F9D04A30092E513 /* CWGNALETUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D0A9311F9D04A30092E513 /* CWGNALETUITests.m */; };
+		C4D0A94A1F9D10550092E513 /* Case.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D0A9491F9D10550092E513 /* Case.m */; };
+		C4D0A94D1F9D1B0C0092E513 /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D0A94C1F9D1B0C0092E513 /* Contants.swift */; };
+		C4D0A9521F9D50950092E513 /* AuthVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D0A9511F9D50950092E513 /* AuthVC.m */; };
+		C4D0A9551F9D750F0092E513 /* AuthService.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D0A9541F9D750F0092E513 /* AuthService.m */; };
+		C4D0A9571F9DCB670092E513 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4D0A94F1F9D3E360092E513 /* GoogleService-Info.plist */; };
+		C4D0A95A1F9DD4B00092E513 /* DBService.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D0A9591F9DD4B00092E513 /* DBService.m */; };
+		C4D0A95D1F9EA9A90092E513 /* Users.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D0A95C1F9EA9A90092E513 /* Users.m */; };
+		C4EF25891FC22E7D0007B7D9 /* HMPGCells.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EF25881FC22E7D0007B7D9 /* HMPGCells.m */; };
+		C4EF258C1FC2312C0007B7D9 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EF258B1FC2312C0007B7D9 /* HomeVC.m */; };
+		C4EF25931FC2465B0007B7D9 /* CategoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EF25921FC2465B0007B7D9 /* CategoryVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B3BC0DF58DE62FD82AA6CDA /* Pods_CWGNALETTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CWGNALETTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		266D8393B734D2FC54DF50E2 /* Pods-CWGNALET.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWGNALET.release.xcconfig"; path = "Pods/Target Support Files/Pods-CWGNALET/Pods-CWGNALET.release.xcconfig"; sourceTree = "<group>"; };
+		3B07A5FA61FA92492A14F9F1 /* Pods_CWGNALETUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CWGNALETUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78B17E3D0D67F0FEB74CCD0B /* Pods-CWGNALETTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWGNALETTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CWGNALETTests/Pods-CWGNALETTests.release.xcconfig"; sourceTree = "<group>"; };
+		94813887AAABE7ABBF4EE1EC /* Pods-CWGNALETUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWGNALETUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CWGNALETUITests/Pods-CWGNALETUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C4891A0E20138722003D4DC1 /* RequestVCR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestVCR.h; sourceTree = "<group>"; };
+		C4891A0F20138722003D4DC1 /* RequestVCR.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestVCR.m; sourceTree = "<group>"; };
 		C4D0A90A1F9D04A30092E513 /* CWGNALET.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CWGNALET.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D0A90D1F9D04A30092E513 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C4D0A90E1F9D04A30092E513 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +72,31 @@
 		C4D0A92D1F9D04A30092E513 /* CWGNALETUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CWGNALETUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D0A9311F9D04A30092E513 /* CWGNALETUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWGNALETUITests.m; sourceTree = "<group>"; };
 		C4D0A9331F9D04A30092E513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4D0A9481F9D10550092E513 /* Case.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Case.h; sourceTree = "<group>"; };
+		C4D0A9491F9D10550092E513 /* Case.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Case.m; sourceTree = "<group>"; };
+		C4D0A94B1F9D1B0C0092E513 /* CWGNALET-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CWGNALET-Bridging-Header.h"; sourceTree = "<group>"; };
+		C4D0A94C1F9D1B0C0092E513 /* Contants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
+		C4D0A94E1F9D3C1E0092E513 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C4D0A94F1F9D3E360092E513 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C4D0A9501F9D50950092E513 /* AuthVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthVC.h; sourceTree = "<group>"; };
+		C4D0A9511F9D50950092E513 /* AuthVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthVC.m; sourceTree = "<group>"; };
+		C4D0A9531F9D750F0092E513 /* AuthService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthService.h; sourceTree = "<group>"; };
+		C4D0A9541F9D750F0092E513 /* AuthService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthService.m; sourceTree = "<group>"; };
+		C4D0A9561F9DC4FF0092E513 /* Predefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Predefs.h; sourceTree = "<group>"; };
+		C4D0A9581F9DD4B00092E513 /* DBService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBService.h; sourceTree = "<group>"; };
+		C4D0A9591F9DD4B00092E513 /* DBService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBService.m; sourceTree = "<group>"; };
+		C4D0A95B1F9EA9A90092E513 /* Users.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Users.h; sourceTree = "<group>"; };
+		C4D0A95C1F9EA9A90092E513 /* Users.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Users.m; sourceTree = "<group>"; };
+		C4EF25871FC22E7D0007B7D9 /* HMPGCells.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMPGCells.h; sourceTree = "<group>"; };
+		C4EF25881FC22E7D0007B7D9 /* HMPGCells.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMPGCells.m; sourceTree = "<group>"; };
+		C4EF258A1FC2312C0007B7D9 /* HomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		C4EF258B1FC2312C0007B7D9 /* HomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		C4EF25911FC2465B0007B7D9 /* CategoryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryVC.h; sourceTree = "<group>"; };
+		C4EF25921FC2465B0007B7D9 /* CategoryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryVC.m; sourceTree = "<group>"; };
+		D201821C5C4E0E1CE5EB5970 /* Pods_CWGNALET.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CWGNALET.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2E5D89DC231A3F0A0BD2BC1 /* Pods-CWGNALETUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWGNALETUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CWGNALETUITests/Pods-CWGNALETUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DC9DDC54107B3A2DD522152E /* Pods-CWGNALET.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWGNALET.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CWGNALET/Pods-CWGNALET.debug.xcconfig"; sourceTree = "<group>"; };
+		FC7691AB5F746474E3DA634B /* Pods-CWGNALETTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWGNALETTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CWGNALETTests/Pods-CWGNALETTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C85CDDBBAF81AB3DE22CC5A /* Pods_CWGNALET.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13740754CB8950D224EF20B7 /* Pods_CWGNALETTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,19 +120,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184861038BD41D2FEC950866 /* Pods_CWGNALETUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		90C5AC2EB30C783E10D3C398 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D201821C5C4E0E1CE5EB5970 /* Pods_CWGNALET.framework */,
+				1B3BC0DF58DE62FD82AA6CDA /* Pods_CWGNALETTests.framework */,
+				3B07A5FA61FA92492A14F9F1 /* Pods_CWGNALETUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0872E3B044867469BD094A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC9DDC54107B3A2DD522152E /* Pods-CWGNALET.debug.xcconfig */,
+				266D8393B734D2FC54DF50E2 /* Pods-CWGNALET.release.xcconfig */,
+				FC7691AB5F746474E3DA634B /* Pods-CWGNALETTests.debug.xcconfig */,
+				78B17E3D0D67F0FEB74CCD0B /* Pods-CWGNALETTests.release.xcconfig */,
+				D2E5D89DC231A3F0A0BD2BC1 /* Pods-CWGNALETUITests.debug.xcconfig */,
+				94813887AAABE7ABBF4EE1EC /* Pods-CWGNALETUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C4D0A9011F9D04A30092E513 = {
 			isa = PBXGroup;
 			children = (
+				C4D0A94E1F9D3C1E0092E513 /* Default-568h@2x.png */,
 				C4D0A90C1F9D04A30092E513 /* CWGNALET */,
 				C4D0A9251F9D04A30092E513 /* CWGNALETTests */,
 				C4D0A9301F9D04A30092E513 /* CWGNALETUITests */,
 				C4D0A90B1F9D04A30092E513 /* Products */,
+				A0872E3B044867469BD094A5 /* Pods */,
+				90C5AC2EB30C783E10D3C398 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,15 +176,15 @@
 		C4D0A90C1F9D04A30092E513 /* CWGNALET */ = {
 			isa = PBXGroup;
 			children = (
-				C4D0A90D1F9D04A30092E513 /* AppDelegate.h */,
-				C4D0A90E1F9D04A30092E513 /* AppDelegate.m */,
-				C4D0A9101F9D04A30092E513 /* ViewController.h */,
-				C4D0A9111F9D04A30092E513 /* ViewController.m */,
-				C4D0A9131F9D04A30092E513 /* Main.storyboard */,
-				C4D0A9161F9D04A30092E513 /* Assets.xcassets */,
-				C4D0A9181F9D04A30092E513 /* LaunchScreen.storyboard */,
+				C4D0A9441F9D05890092E513 /* Headers */,
+				C4D0A9431F9D056D0092E513 /* Services */,
+				C4D0A9421F9D05630092E513 /* Resources */,
+				C4D0A9411F9D05500092E513 /* Model */,
 				C4D0A91B1F9D04A30092E513 /* Info.plist */,
-				C4D0A91C1F9D04A30092E513 /* main.m */,
+				C4D0A94F1F9D3E360092E513 /* GoogleService-Info.plist */,
+				C4D0A9401F9D053C0092E513 /* View */,
+				C4D0A93F1F9D052B0092E513 /* Controller */,
+				C4D0A9561F9DC4FF0092E513 /* Predefs.h */,
 			);
 			path = CWGNALET;
 			sourceTree = "<group>";
@@ -132,6 +207,84 @@
 			path = CWGNALETUITests;
 			sourceTree = "<group>";
 		};
+		C4D0A93F1F9D052B0092E513 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C4D0A9111F9D04A30092E513 /* ViewController.m */,
+				C4D0A90E1F9D04A30092E513 /* AppDelegate.m */,
+				C4D0A9501F9D50950092E513 /* AuthVC.h */,
+				C4D0A9511F9D50950092E513 /* AuthVC.m */,
+				C4EF258A1FC2312C0007B7D9 /* HomeVC.h */,
+				C4EF258B1FC2312C0007B7D9 /* HomeVC.m */,
+				C4EF25911FC2465B0007B7D9 /* CategoryVC.h */,
+				C4EF25921FC2465B0007B7D9 /* CategoryVC.m */,
+				C4891A0E20138722003D4DC1 /* RequestVCR.h */,
+				C4891A0F20138722003D4DC1 /* RequestVCR.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C4D0A9401F9D053C0092E513 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C4D0A9181F9D04A30092E513 /* LaunchScreen.storyboard */,
+				C4D0A9131F9D04A30092E513 /* Main.storyboard */,
+				C4EF25871FC22E7D0007B7D9 /* HMPGCells.h */,
+				C4EF25881FC22E7D0007B7D9 /* HMPGCells.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C4D0A9411F9D05500092E513 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4EF258D1FC23C840007B7D9 /* Case categories */,
+				C4D0A9481F9D10550092E513 /* Case.h */,
+				C4D0A9491F9D10550092E513 /* Case.m */,
+				C4D0A95B1F9EA9A90092E513 /* Users.h */,
+				C4D0A95C1F9EA9A90092E513 /* Users.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C4D0A9421F9D05630092E513 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C4D0A9161F9D04A30092E513 /* Assets.xcassets */,
+				C4D0A94C1F9D1B0C0092E513 /* Contants.swift */,
+				C4D0A94B1F9D1B0C0092E513 /* CWGNALET-Bridging-Header.h */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C4D0A9431F9D056D0092E513 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C4D0A9531F9D750F0092E513 /* AuthService.h */,
+				C4D0A9541F9D750F0092E513 /* AuthService.m */,
+				C4D0A9581F9DD4B00092E513 /* DBService.h */,
+				C4D0A9591F9DD4B00092E513 /* DBService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C4D0A9441F9D05890092E513 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				C4D0A91C1F9D04A30092E513 /* main.m */,
+				C4D0A90D1F9D04A30092E513 /* AppDelegate.h */,
+				C4D0A9101F9D04A30092E513 /* ViewController.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		C4EF258D1FC23C840007B7D9 /* Case categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Case categories";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +292,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4D0A9361F9D04A40092E513 /* Build configuration list for PBXNativeTarget "CWGNALET" */;
 			buildPhases = (
+				4300CF2E4DB72D817FE1FCE3 /* [CP] Check Pods Manifest.lock */,
 				C4D0A9061F9D04A30092E513 /* Sources */,
 				C4D0A9071F9D04A30092E513 /* Frameworks */,
 				C4D0A9081F9D04A30092E513 /* Resources */,
+				81E70E449F4C3493716218A5 /* [CP] Embed Pods Frameworks */,
+				59304955CA020CA47E5BF36D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,9 +312,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4D0A9391F9D04A40092E513 /* Build configuration list for PBXNativeTarget "CWGNALETTests" */;
 			buildPhases = (
+				0D82CDC4592442BD5F54038B /* [CP] Check Pods Manifest.lock */,
 				C4D0A91E1F9D04A30092E513 /* Sources */,
 				C4D0A91F1F9D04A30092E513 /* Frameworks */,
 				C4D0A9201F9D04A30092E513 /* Resources */,
+				F64CF5D915F69D8B8A396756 /* [CP] Embed Pods Frameworks */,
+				F4CB6366A36A5D394AC3E17C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,9 +333,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4D0A93C1F9D04A40092E513 /* Build configuration list for PBXNativeTarget "CWGNALETUITests" */;
 			buildPhases = (
+				C84007F0EA51F961ECA31E6D /* [CP] Check Pods Manifest.lock */,
 				C4D0A9291F9D04A30092E513 /* Sources */,
 				C4D0A92A1F9D04A30092E513 /* Frameworks */,
 				C4D0A92B1F9D04A30092E513 /* Resources */,
+				9B93EEE736B38B47396BF4AA /* [CP] Embed Pods Frameworks */,
+				0AC0F172BD86EE2C39C25532 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +361,7 @@
 				TargetAttributes = {
 					C4D0A9091F9D04A30092E513 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					C4D0A9211F9D04A30092E513 = {
@@ -239,6 +402,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4D0A91A1F9D04A30092E513 /* LaunchScreen.storyboard in Resources */,
+				C4D0A9571F9DCB670092E513 /* GoogleService-Info.plist in Resources */,
 				C4D0A9171F9D04A30092E513 /* Assets.xcassets in Resources */,
 				C4D0A9151F9D04A30092E513 /* Main.storyboard in Resources */,
 			);
@@ -260,14 +424,162 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0AC0F172BD86EE2C39C25532 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CWGNALETUITests/Pods-CWGNALETUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0D82CDC4592442BD5F54038B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4300CF2E4DB72D817FE1FCE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		59304955CA020CA47E5BF36D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CWGNALET/Pods-CWGNALET-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81E70E449F4C3493716218A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CWGNALET/Pods-CWGNALET-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B93EEE736B38B47396BF4AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CWGNALETUITests/Pods-CWGNALETUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C84007F0EA51F961ECA31E6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4CB6366A36A5D394AC3E17C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CWGNALETTests/Pods-CWGNALETTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F64CF5D915F69D8B8A396756 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CWGNALETTests/Pods-CWGNALETTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C4D0A9061F9D04A30092E513 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4D0A95D1F9EA9A90092E513 /* Users.m in Sources */,
+				C4D0A9521F9D50950092E513 /* AuthVC.m in Sources */,
+				C4891A1020138722003D4DC1 /* RequestVCR.m in Sources */,
 				C4D0A9121F9D04A30092E513 /* ViewController.m in Sources */,
+				C4D0A9551F9D750F0092E513 /* AuthService.m in Sources */,
+				C4D0A94A1F9D10550092E513 /* Case.m in Sources */,
+				C4D0A94D1F9D1B0C0092E513 /* Contants.swift in Sources */,
+				C4EF258C1FC2312C0007B7D9 /* HomeVC.m in Sources */,
+				C4D0A95A1F9DD4B00092E513 /* DBService.m in Sources */,
 				C4D0A91D1F9D04A30092E513 /* main.m in Sources */,
 				C4D0A90F1F9D04A30092E513 /* AppDelegate.m in Sources */,
+				C4EF25931FC2465B0007B7D9 /* CategoryVC.m in Sources */,
+				C4EF25891FC22E7D0007B7D9 /* HMPGCells.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,41 +734,57 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		C4D0A9371F9D04A40092E513 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC9DDC54107B3A2DD522152E /* Pods-CWGNALET.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MB46J93Q7Z;
 				INFOPLIST_FILE = CWGNALET/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codesworth.CWGNALET;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CWGNALET/Resources/CWGNALET-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		C4D0A9381F9D04A40092E513 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 266D8393B734D2FC54DF50E2 /* Pods-CWGNALET.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MB46J93Q7Z;
 				INFOPLIST_FILE = CWGNALET/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codesworth.CWGNALET;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CWGNALET/Resources/CWGNALET-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		C4D0A93A1F9D04A40092E513 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC7691AB5F746474E3DA634B /* Pods-CWGNALETTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MB46J93Q7Z;
@@ -471,7 +799,9 @@
 		};
 		C4D0A93B1F9D04A40092E513 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78B17E3D0D67F0FEB74CCD0B /* Pods-CWGNALETTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MB46J93Q7Z;
@@ -486,7 +816,9 @@
 		};
 		C4D0A93D1F9D04A40092E513 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2E5D89DC231A3F0A0BD2BC1 /* Pods-CWGNALETUITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MB46J93Q7Z;
 				INFOPLIST_FILE = CWGNALETUITests/Info.plist;
@@ -500,7 +832,9 @@
 		};
 		C4D0A93E1F9D04A40092E513 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94813887AAABE7ABBF4EE1EC /* Pods-CWGNALETUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MB46J93Q7Z;
 				INFOPLIST_FILE = CWGNALETUITests/Info.plist;

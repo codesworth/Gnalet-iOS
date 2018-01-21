@@ -7,8 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "AuthVC.h"
+@import Firebase;
 
-@interface AppDelegate ()
+
+@interface AppDelegate()
 
 @end
 
@@ -16,7 +19,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [FIRApp configure];
+    [GIDSignIn sharedInstance].clientID = [FIRApp defaultApp].options.clientID;
+    [GIDSignIn sharedInstance].delegate = self;
+    //[_window setRootViewController:[self rootViewController]];
     // Override point for customization after application launch.
+    
+    
     return YES;
 }
 
@@ -47,5 +57,41 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+-(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
+{
+    return [[GIDSignIn sharedInstance] handleURL:url sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey] annotation:options[UIApplicationOpenURLOptionsAnnotationKey]];
+
+}
+
+-(UIViewController*)rootViewController
+{
+    NSString* storyboardName = @"Main";
+    UIStoryboard* s = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
+    if ([[NSUserDefaults standardUserDefaults]boolForKey:CS.C.DID_LOG_IN_]) {
+        return [s instantiateViewControllerWithIdentifier:@"Nav"];
+    }
+    return [s instantiateViewControllerWithIdentifier:NSStringFromClass([AuthVC class])];
+}
+
+
+
+- (void)signIn:(GIDSignIn *)signIn didSignInForUser:(GIDGoogleUser *)user withError:(NSError *)error {
+    
+    if (error) {}
+    else{
+        GIDAuthentication *authentication = user.authentication;
+        FIRAuthCredential *credential =
+        [FIRGoogleAuthProvider credentialWithIDToken:authentication.idToken accessToken:authentication.accessToken];
+        [[FIRAuth auth]signInWithCredential:credential completion:^(FIRUser * _Nullable user, NSError * _Nullable error) {
+            if(error){}
+            else{
+                [[DBService service]saveUser:user.uid username:user.displayName imgLnk:user.photoURL.absoluteString];
+                [[NSUserDefaults standardUserDefaults]setObject:user.uid forKey:CS.C.USER_UID__];
+                [[NSUserDefaults standardUserDefaults]setBool:true forKey:CS.C.DID_LOG_IN_];
+                [_window.rootViewController performSegueWithIdentifier:@"LoggedIn" sender:nil];
+            }
+        }];
+    }
+}
 
 @end
