@@ -7,13 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Predefs.h"
-@interface Users : NSObject
+#import "CWGNALET-Swift.h"
+@interface Users : NSObject <NSCoding>
 
 @property(nonatomic,strong,nonnull)NSString* uid;
 @property(nonatomic,strong,nonnull)NSString* username;
+//@property(nonatomic,strong,nullable)NSString* firstname;
+@property(nonatomic,strong,nullable)NSString* lastname;
+@property(nonatomic,strong,nullable)NSString* email;
 @property(nonatomic,strong,nullable)NSString* imgLnk;
 @property(nonatomic, strong,nullable)NSNumber* gcPoints;
+@property(nonatomic, strong,nullable)NSString* phone;
 
 -(instancetype _Nonnull )initWithData:(NSDictionary*_Nonnull)data;
 

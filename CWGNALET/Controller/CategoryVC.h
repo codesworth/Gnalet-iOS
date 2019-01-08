@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "Predefs.h"
+#import "RequestVCR.h"
+#import "GenReqVC.h"
 
 @interface CategoryVC : UIViewController
 

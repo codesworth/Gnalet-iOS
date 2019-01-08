@@ -16,10 +16,17 @@
 
 @implementation HMPGCells
 
+-(NSString*)imageForIndex:(NSUInteger)index
+{
+    NSArray* list = @[@"add", @"list", @"streetmap", @"user"];
+    return [list objectAtIndex:index];
+}
 
--(void)configureCell:(NSString *)name
+
+-(void)configureCell:(NSString *)name index:(NSUInteger)index
 {
     [_namelbl setText:name];
+    [_imageView setImage:[UIImage imageNamed:[self imageForIndex:index]]];
 }
 
 

@@ -37,13 +37,13 @@
 
 - (IBAction)signInButtonPressed:(id)sender {
     
-    if (![_usernametextfield.text isEqualToString:@""] && ![_passwordTXF.text isEqualToString:@""] && [_emailTXF.text containsString:@"@"] && _passwordTXF.text.length > 5 ){
-        [[AuthService auth]signUp:_emailTXF.text password:_passwordTXF.text username:self.usernametextfield.text onComplete:^{
-            [self performSegueWithIdentifier:@"LoggedIn" sender:nil];
-        } view:self stop:^{
-            //
-        }];
-    }
+//    if (![_usernametextfield.text isEqualToString:@""] && ![_passwordTXF.text isEqualToString:@""] && [_emailTXF.text containsString:@"@"] && _passwordTXF.text.length > 5 ){
+//        [[AuthService auth]signUp:_emailTXF.text password:_passwordTXF.text username:self.usernametextfield.text onComplete:^{
+//            [self performSegueWithIdentifier:@"LoggedIn" sender:nil];
+//        } view:self stop:^{
+//            //
+//        }];
+//    }
 }
 
 

@@ -21,22 +21,30 @@
     [super viewDidLoad];
     [_tableView setDataSource:self];
     [_tableView setDelegate:self];
-    NSArray* arr = @[    @"Road and Transport",
-                         @"Garbage and Waste Disposal",
-                         @"Street Light",
-                         @"Public Safety",
-                         @"General Maintenance",
-                         @"Electricity",
-                         @"Water and Sanitation"];
+    NSArray* arr = @[    CS.ABANDONED_ACCIDENT,
+                         CS.ECG,
+                         CS.POTHOLES,
+                         CS.SANITATION,
+                         CS.OTHERS];
     self.lists = [[NSMutableArray alloc]initWithArray:arr];
     // Do any additional setup after loading the view.
 }
 
 
-#pragma mark - Navigation
+#pragma warning - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:@"NewReqGen"]){
+        GenReqVC* vc = [segue destinationViewController];
+        NSString* title = (NSString*)sender;
+        [vc setCatTitle:title];
+    }else{
+        RequestVCR* vc = [segue destinationViewController];
+        NSString* title = (NSString*)sender;
+        [vc setCatTitle:title];
+    }
 
 }
 
@@ -68,8 +76,32 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self performSegueWithIdentifier:@"NewRequestR" sender:nil];
+    NSString* option = [_lists objectAtIndex:indexPath.row];
+    if (indexPath.row == 0){
+       [self performSegueWithIdentifier:@"NewRequestR" sender:option];
+    }else{
+        [self performSegueWithIdentifier:@"NewReqGen" sender:option];
+    }
+    
 }
 
 
 @end
+
+
+
+
+
+/*
+ 
+ Road and Transport || ABANDONED/ACCIDENT VEHICLE",
+ @"Garbage and Waste Disposal",
+ @"Street Light",
+ @"Public Safety || POTHOLES",
+ @"General Maintenance",
+ @"Electricity || ELECTRICAL /ECG",
+ @"Water and Sanitation || SANITATION",
+ @"Abandoned Vehicle",
+ @"Suspicious Activity || OTHERS"
+ 
+ */

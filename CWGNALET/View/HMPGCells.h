@@ -10,6 +10,6 @@
 
 @interface HMPGCells : UICollectionViewCell
 
--(void)configureCell:(NSString*)name;
+-(void)configureCell:(NSString *)name index:(NSUInteger)index;
 
 @end

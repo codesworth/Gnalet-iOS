@@ -11,6 +11,8 @@
 #import "Predefs.h"
 @import Firebase;
 @import GoogleSignIn;
+@import GoogleMaps;
+@import GooglePlaces;
 
 
 

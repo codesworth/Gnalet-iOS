@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Predefs.h"
+#import "GFGeoHash.h"
+#import "CCActivityHUD.h"
+@import CoreLocation;
+
 
 @interface RequestVCR : UIViewController
+@property (nonatomic,strong,nonnull) NSString* catTitle;
 
 @end

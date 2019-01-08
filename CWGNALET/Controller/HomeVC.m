@@ -8,9 +8,13 @@
 
 #import "HomeVC.h"
 
-@interface HomeVC ()<UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface HomeVC ()<UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UIPopoverPresentationControllerDelegate>
 
 @property(nonatomic, strong, nonnull) IBOutlet UICollectionView* collectionView;
+@property (weak, nonatomic) IBOutlet UIView *overlay;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activity;
+@property (weak, nonatomic) IBOutlet UILabel *messagelbl;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *infobutt;
 @property(nonatomic, nonnull, strong) NSMutableArray* options;
 @end
 
@@ -27,6 +31,34 @@
     NSArray* obj = @[@"New Request", @"My Requests", @"Issues Nearby", @"Reporter"];
     _options = [obj mutableCopy];
     // Do any additional setup after loading the view.
+}
+
+
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:YES];
+    __block BOOL firsted = [[NSUserDefaults standardUserDefaults] boolForKey:CS.C.FIRST_RUN];
+    if (!firsted){
+        [_overlay setHidden:NO];
+        [_activity startAnimating];
+        [[AuthService auth]signInAnonymously:^(id _Nullable object ){
+            //End animation success connection
+            if (object == nil) {
+                [_overlay setHidden:YES];
+                [_activity stopAnimating];
+                UIAlertAction* ac = [UIAlertAction actionWithTitle:@"Dismiss" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {}];
+                [self presentViewController:[CS createAlert:@"Success" :@"Initialized Succesfully" actions:@[ac]] animated:YES completion:^{
+                }];
+                firsted = YES;
+                [[NSUserDefaults standardUserDefaults] setBool:firsted forKey:CS.C.FIRST_RUN];
+            }
+        } errorCompletion:^{
+            //Error establishing connection
+        }];
+    }
+    
+    
 }
 
 
@@ -56,22 +88,73 @@
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     HMPGCells* cell = (HMPGCells*)[collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([HMPGCells class]) forIndexPath:indexPath];
-    [cell configureCell:[_options objectAtIndex:indexPath.row]];
+    [cell configureCell:[_options objectAtIndex:indexPath.row] index:indexPath.row];
     return  cell;
 }
 
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake(150, 150);
+    return CGSizeMake(100, 100);
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    //NSString* option = [_options objectAtIndex:indexPath.row];
+    switch (indexPath.row) {
+        case 0:
+            [self performSegueWithIdentifier:@"Categories" sender:nil];
+            break;
+        case 1:
+            [self performSegueWithIdentifier:@"MyRequest" sender:nil];
+            break;
+        case 2:
+            [self performSegueWithIdentifier:@"Maps" sender:nil];
+            break;
+        case 3:
+            [self performSegueWithIdentifier:@"Reporter" sender:nil];
+            break;
+        default:
+            break;
+    }
+    
+}
+- (IBAction)newreq:(id)sender {
+    
     [self performSegueWithIdentifier:@"Categories" sender:nil];
 }
 
+- (IBAction)myreqs:(id)sender {
+     [self performSegueWithIdentifier:@"MyRequest" sender:nil];
+}
 
+- (IBAction)nearby:(id)sender {
+    [self performSegueWithIdentifier:@"Maps" sender:nil];
+}
+
+- (IBAction)reporter:(id)sender {
+    [self performSegueWithIdentifier:@"Reporter" sender:nil];
+}
+
+- (IBAction)infoTapped:(id)sender {
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"" message:@"" preferredStyle:(UIAlertControllerStyleActionSheet)];
+    [alert addAction:[UIAlertAction actionWithTitle:@"About" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
+        UIAlertAction* ac = [UIAlertAction actionWithTitle:@"Dismiss" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {}];
+        [self presentViewController:[CS createAlert:@"GNALET" :@"GHALET version 1.01" actions:@[ac]] animated:YES completion:nil];
+    }]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"Feedback" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
+        UIAlertAction* ac = [UIAlertAction actionWithTitle:@"Dismiss" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {}];
+        [self presentViewController:[CS createAlert:@"GNALET" :@"GHALET version 1.01" actions:@[ac]] animated:YES completion:nil];
+    }]];
+        alert.modalPresentationStyle = UIModalPresentationPopover;
+    [self presentViewController:alert animated:YES completion:nil];
+    
+    UIPopoverPresentationController *popController = [alert popoverPresentationController];
+    popController.permittedArrowDirections = UIPopoverArrowDirectionAny;
+    popController.barButtonItem = self.infobutt;
+    popController.delegate = self;
+
+
+    
+}
 
 
 @end

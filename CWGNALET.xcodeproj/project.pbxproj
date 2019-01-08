@@ -10,7 +10,25 @@
 		13740754CB8950D224EF20B7 /* Pods_CWGNALETTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3BC0DF58DE62FD82AA6CDA /* Pods_CWGNALETTests.framework */; };
 		184861038BD41D2FEC950866 /* Pods_CWGNALETUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B07A5FA61FA92492A14F9F1 /* Pods_CWGNALETUITests.framework */; };
 		9C85CDDBBAF81AB3DE22CC5A /* Pods_CWGNALET.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D201821C5C4E0E1CE5EB5970 /* Pods_CWGNALET.framework */; };
+		C4548CC2203F892D000442E5 /* GeoFire.m in Sources */ = {isa = PBXBuildFile; fileRef = C4548CB9203F892D000442E5 /* GeoFire.m */; };
+		C4548CC3203F892D000442E5 /* GFBase32Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = C4548CBB203F892D000442E5 /* GFBase32Utils.m */; };
+		C4548CC4203F892D000442E5 /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = C4548CBD203F892D000442E5 /* GFGeoHash.m */; };
+		C4548CC5203F892D000442E5 /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = C4548CBF203F892D000442E5 /* GFGeoHashQuery.m */; };
+		C4548CC6203F892D000442E5 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = C4548CC1203F892D000442E5 /* GFQuery.m */; };
+		C461AD87203E5294008B6B37 /* GenReqVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C461AD86203E5294008B6B37 /* GenReqVC.m */; };
+		C46406A1203E2F4000D35AB4 /* JVFloatLabeledTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C464069E203E2F3F00D35AB4 /* JVFloatLabeledTextField.m */; };
+		C46406A2203E2F4000D35AB4 /* JVFloatLabeledTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = C464069F203E2F3F00D35AB4 /* JVFloatLabeledTextView.m */; };
+		C46406A3203E2F4000D35AB4 /* NSString+TextDirectionality.m in Sources */ = {isa = PBXBuildFile; fileRef = C46406A0203E2F4000D35AB4 /* NSString+TextDirectionality.m */; };
+		C46E93CD206DC5870043A870 /* MapsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C46E93CC206DC5870043A870 /* MapsVC.m */; };
+		C46E93D0206DDB870043A870 /* IssuesCells.m in Sources */ = {isa = PBXBuildFile; fileRef = C46E93CF206DDB870043A870 /* IssuesCells.m */; };
 		C4891A1020138722003D4DC1 /* RequestVCR.m in Sources */ = {isa = PBXBuildFile; fileRef = C4891A0F20138722003D4DC1 /* RequestVCR.m */; };
+		C4892BA32071A540000A5685 /* CCActivityHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C4892B9F2071A53C000A5685 /* CCActivityHUD.m */; };
+		C4892BA42071A540000A5685 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = C4892BA12071A53E000A5685 /* UIImage+animatedGIF.m */; };
+		C4AD82F32015168800758B8C /* MyRequestsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AD82F22015168800758B8C /* MyRequestsVC.m */; };
+		C4AD82F620151A2600758B8C /* MyRequestCells.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AD82F520151A2600758B8C /* MyRequestCells.m */; };
+		C4AD82F92015214300758B8C /* RequestDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AD82F82015214300758B8C /* RequestDetailsVC.m */; };
+		C4AD82FC201537F300758B8C /* ReporterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AD82FB201537F300758B8C /* ReporterVC.m */; };
+		C4AD82FF20153EC900758B8C /* NearbyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AD82FE20153EC900758B8C /* NearbyVC.m */; };
 		C4D0A90F1F9D04A30092E513 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D0A90E1F9D04A30092E513 /* AppDelegate.m */; };
 		C4D0A9121F9D04A30092E513 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D0A9111F9D04A30092E513 /* ViewController.m */; };
 		C4D0A9151F9D04A30092E513 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4D0A9131F9D04A30092E513 /* Main.storyboard */; };
@@ -26,6 +44,7 @@
 		C4D0A9571F9DCB670092E513 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4D0A94F1F9D3E360092E513 /* GoogleService-Info.plist */; };
 		C4D0A95A1F9DD4B00092E513 /* DBService.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D0A9591F9DD4B00092E513 /* DBService.m */; };
 		C4D0A95D1F9EA9A90092E513 /* Users.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D0A95C1F9EA9A90092E513 /* Users.m */; };
+		C4E8C85A2040384300CE2066 /* ReportAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E8C8592040384300CE2066 /* ReportAnnotation.m */; };
 		C4EF25891FC22E7D0007B7D9 /* HMPGCells.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EF25881FC22E7D0007B7D9 /* HMPGCells.m */; };
 		C4EF258C1FC2312C0007B7D9 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EF258B1FC2312C0007B7D9 /* HomeVC.m */; };
 		C4EF25931FC2465B0007B7D9 /* CategoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EF25921FC2465B0007B7D9 /* CategoryVC.m */; };
@@ -54,8 +73,51 @@
 		3B07A5FA61FA92492A14F9F1 /* Pods_CWGNALETUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CWGNALETUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B17E3D0D67F0FEB74CCD0B /* Pods-CWGNALETTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWGNALETTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CWGNALETTests/Pods-CWGNALETTests.release.xcconfig"; sourceTree = "<group>"; };
 		94813887AAABE7ABBF4EE1EC /* Pods-CWGNALETUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWGNALETUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CWGNALETUITests/Pods-CWGNALETUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C4548CAF203F1C33000442E5 /* TypeDefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeDefs.h; sourceTree = "<group>"; };
+		C4548CB2203F892D000442E5 /* GeoFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoFire.h; sourceTree = "<group>"; };
+		C4548CB3203F892D000442E5 /* GFCircleQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFCircleQuery.h; sourceTree = "<group>"; };
+		C4548CB4203F892D000442E5 /* GFQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFQuery.h; sourceTree = "<group>"; };
+		C4548CB5203F892D000442E5 /* GFRegionQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFRegionQuery.h; sourceTree = "<group>"; };
+		C4548CB6203F892D000442E5 /* GeoFire-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire-Prefix.pch"; sourceTree = "<group>"; };
+		C4548CB8203F892D000442E5 /* GeoFire+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire+Private.h"; sourceTree = "<group>"; };
+		C4548CB9203F892D000442E5 /* GeoFire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoFire.m; sourceTree = "<group>"; };
+		C4548CBA203F892D000442E5 /* GFBase32Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFBase32Utils.h; sourceTree = "<group>"; };
+		C4548CBB203F892D000442E5 /* GFBase32Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFBase32Utils.m; sourceTree = "<group>"; };
+		C4548CBC203F892D000442E5 /* GFGeoHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHash.h; sourceTree = "<group>"; };
+		C4548CBD203F892D000442E5 /* GFGeoHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHash.m; sourceTree = "<group>"; };
+		C4548CBE203F892D000442E5 /* GFGeoHashQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHashQuery.h; sourceTree = "<group>"; };
+		C4548CBF203F892D000442E5 /* GFGeoHashQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHashQuery.m; sourceTree = "<group>"; };
+		C4548CC0203F892D000442E5 /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
+		C4548CC1203F892D000442E5 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
+		C461AD85203E5294008B6B37 /* GenReqVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenReqVC.h; sourceTree = "<group>"; };
+		C461AD86203E5294008B6B37 /* GenReqVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenReqVC.m; sourceTree = "<group>"; };
+		C464069B203E2F3D00D35AB4 /* JVFloatLabeledTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextView.h; sourceTree = "<group>"; };
+		C464069C203E2F3E00D35AB4 /* JVFloatLabeledTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextField.h; sourceTree = "<group>"; };
+		C464069D203E2F3E00D35AB4 /* NSString+TextDirectionality.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TextDirectionality.h"; sourceTree = "<group>"; };
+		C464069E203E2F3F00D35AB4 /* JVFloatLabeledTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextField.m; sourceTree = "<group>"; };
+		C464069F203E2F3F00D35AB4 /* JVFloatLabeledTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextView.m; sourceTree = "<group>"; };
+		C46406A0203E2F4000D35AB4 /* NSString+TextDirectionality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TextDirectionality.m"; sourceTree = "<group>"; };
+		C46E93CB206DC5870043A870 /* MapsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapsVC.h; sourceTree = "<group>"; };
+		C46E93CC206DC5870043A870 /* MapsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapsVC.m; sourceTree = "<group>"; };
+		C46E93CE206DDB870043A870 /* IssuesCells.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IssuesCells.h; sourceTree = "<group>"; };
+		C46E93CF206DDB870043A870 /* IssuesCells.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IssuesCells.m; sourceTree = "<group>"; };
 		C4891A0E20138722003D4DC1 /* RequestVCR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestVCR.h; sourceTree = "<group>"; };
 		C4891A0F20138722003D4DC1 /* RequestVCR.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestVCR.m; sourceTree = "<group>"; };
+		C4892B9E2071A53B000A5685 /* CCActivityHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCActivityHUD.h; sourceTree = "<group>"; };
+		C4892B9F2071A53C000A5685 /* CCActivityHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCActivityHUD.m; sourceTree = "<group>"; };
+		C4892BA02071A53D000A5685 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		C4892BA12071A53E000A5685 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		C4892BA22071A53F000A5685 /* Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Size.h; sourceTree = "<group>"; };
+		C4AD82F12015168800758B8C /* MyRequestsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyRequestsVC.h; sourceTree = "<group>"; };
+		C4AD82F22015168800758B8C /* MyRequestsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyRequestsVC.m; sourceTree = "<group>"; };
+		C4AD82F420151A2600758B8C /* MyRequestCells.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyRequestCells.h; sourceTree = "<group>"; };
+		C4AD82F520151A2600758B8C /* MyRequestCells.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyRequestCells.m; sourceTree = "<group>"; };
+		C4AD82F72015214300758B8C /* RequestDetailsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestDetailsVC.h; sourceTree = "<group>"; };
+		C4AD82F82015214300758B8C /* RequestDetailsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestDetailsVC.m; sourceTree = "<group>"; };
+		C4AD82FA201537F300758B8C /* ReporterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReporterVC.h; sourceTree = "<group>"; };
+		C4AD82FB201537F300758B8C /* ReporterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReporterVC.m; sourceTree = "<group>"; };
+		C4AD82FD20153EC900758B8C /* NearbyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NearbyVC.h; sourceTree = "<group>"; };
+		C4AD82FE20153EC900758B8C /* NearbyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NearbyVC.m; sourceTree = "<group>"; };
 		C4D0A90A1F9D04A30092E513 /* CWGNALET.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CWGNALET.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D0A90D1F9D04A30092E513 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C4D0A90E1F9D04A30092E513 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -87,6 +149,8 @@
 		C4D0A9591F9DD4B00092E513 /* DBService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBService.m; sourceTree = "<group>"; };
 		C4D0A95B1F9EA9A90092E513 /* Users.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Users.h; sourceTree = "<group>"; };
 		C4D0A95C1F9EA9A90092E513 /* Users.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Users.m; sourceTree = "<group>"; };
+		C4E8C8582040384300CE2066 /* ReportAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReportAnnotation.h; sourceTree = "<group>"; };
+		C4E8C8592040384300CE2066 /* ReportAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReportAnnotation.m; sourceTree = "<group>"; };
 		C4EF25871FC22E7D0007B7D9 /* HMPGCells.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMPGCells.h; sourceTree = "<group>"; };
 		C4EF25881FC22E7D0007B7D9 /* HMPGCells.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMPGCells.m; sourceTree = "<group>"; };
 		C4EF258A1FC2312C0007B7D9 /* HomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
@@ -150,6 +214,63 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C4548CB0203F892D000442E5 /* GeoFire */ = {
+			isa = PBXGroup;
+			children = (
+				C4548CB1203F892D000442E5 /* API */,
+				C4548CB6203F892D000442E5 /* GeoFire-Prefix.pch */,
+				C4548CB7203F892D000442E5 /* Implementation */,
+			);
+			path = GeoFire;
+			sourceTree = "<group>";
+		};
+		C4548CB1203F892D000442E5 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C4548CB2203F892D000442E5 /* GeoFire.h */,
+				C4548CB3203F892D000442E5 /* GFCircleQuery.h */,
+				C4548CB4203F892D000442E5 /* GFQuery.h */,
+				C4548CB5203F892D000442E5 /* GFRegionQuery.h */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C4548CB7203F892D000442E5 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				C4548CB8203F892D000442E5 /* GeoFire+Private.h */,
+				C4548CB9203F892D000442E5 /* GeoFire.m */,
+				C4548CBA203F892D000442E5 /* GFBase32Utils.h */,
+				C4548CBB203F892D000442E5 /* GFBase32Utils.m */,
+				C4548CBC203F892D000442E5 /* GFGeoHash.h */,
+				C4548CBD203F892D000442E5 /* GFGeoHash.m */,
+				C4548CBE203F892D000442E5 /* GFGeoHashQuery.h */,
+				C4548CBF203F892D000442E5 /* GFGeoHashQuery.m */,
+				C4548CC0203F892D000442E5 /* GFQuery+Private.h */,
+				C4548CC1203F892D000442E5 /* GFQuery.m */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		C464069A203E2F1400D35AB4 /* Imports */ = {
+			isa = PBXGroup;
+			children = (
+				C4892B9E2071A53B000A5685 /* CCActivityHUD.h */,
+				C4892B9F2071A53C000A5685 /* CCActivityHUD.m */,
+				C4892BA22071A53F000A5685 /* Size.h */,
+				C4892BA02071A53D000A5685 /* UIImage+animatedGIF.h */,
+				C4892BA12071A53E000A5685 /* UIImage+animatedGIF.m */,
+				C4548CB0203F892D000442E5 /* GeoFire */,
+				C464069C203E2F3E00D35AB4 /* JVFloatLabeledTextField.h */,
+				C464069E203E2F3F00D35AB4 /* JVFloatLabeledTextField.m */,
+				C464069B203E2F3D00D35AB4 /* JVFloatLabeledTextView.h */,
+				C464069F203E2F3F00D35AB4 /* JVFloatLabeledTextView.m */,
+				C464069D203E2F3E00D35AB4 /* NSString+TextDirectionality.h */,
+				C46406A0203E2F4000D35AB4 /* NSString+TextDirectionality.m */,
+			);
+			path = Imports;
+			sourceTree = "<group>";
+		};
 		C4D0A9011F9D04A30092E513 = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +297,7 @@
 		C4D0A90C1F9D04A30092E513 /* CWGNALET */ = {
 			isa = PBXGroup;
 			children = (
+				C464069A203E2F1400D35AB4 /* Imports */,
 				C4D0A9441F9D05890092E513 /* Headers */,
 				C4D0A9431F9D056D0092E513 /* Services */,
 				C4D0A9421F9D05630092E513 /* Resources */,
@@ -220,6 +342,18 @@
 				C4EF25921FC2465B0007B7D9 /* CategoryVC.m */,
 				C4891A0E20138722003D4DC1 /* RequestVCR.h */,
 				C4891A0F20138722003D4DC1 /* RequestVCR.m */,
+				C4AD82F12015168800758B8C /* MyRequestsVC.h */,
+				C4AD82F22015168800758B8C /* MyRequestsVC.m */,
+				C4AD82F72015214300758B8C /* RequestDetailsVC.h */,
+				C4AD82F82015214300758B8C /* RequestDetailsVC.m */,
+				C4AD82FA201537F300758B8C /* ReporterVC.h */,
+				C4AD82FB201537F300758B8C /* ReporterVC.m */,
+				C4AD82FD20153EC900758B8C /* NearbyVC.h */,
+				C4AD82FE20153EC900758B8C /* NearbyVC.m */,
+				C461AD85203E5294008B6B37 /* GenReqVC.h */,
+				C461AD86203E5294008B6B37 /* GenReqVC.m */,
+				C46E93CB206DC5870043A870 /* MapsVC.h */,
+				C46E93CC206DC5870043A870 /* MapsVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -231,6 +365,10 @@
 				C4D0A9131F9D04A30092E513 /* Main.storyboard */,
 				C4EF25871FC22E7D0007B7D9 /* HMPGCells.h */,
 				C4EF25881FC22E7D0007B7D9 /* HMPGCells.m */,
+				C4AD82F420151A2600758B8C /* MyRequestCells.h */,
+				C4AD82F520151A2600758B8C /* MyRequestCells.m */,
+				C46E93CE206DDB870043A870 /* IssuesCells.h */,
+				C46E93CF206DDB870043A870 /* IssuesCells.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -243,6 +381,8 @@
 				C4D0A9491F9D10550092E513 /* Case.m */,
 				C4D0A95B1F9EA9A90092E513 /* Users.h */,
 				C4D0A95C1F9EA9A90092E513 /* Users.m */,
+				C4E8C8582040384300CE2066 /* ReportAnnotation.h */,
+				C4E8C8592040384300CE2066 /* ReportAnnotation.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -274,6 +414,7 @@
 				C4D0A91C1F9D04A30092E513 /* main.m */,
 				C4D0A90D1F9D04A30092E513 /* AppDelegate.h */,
 				C4D0A9101F9D04A30092E513 /* ViewController.h */,
+				C4548CAF203F1C33000442E5 /* TypeDefs.h */,
 			);
 			path = Headers;
 			sourceTree = "<group>";
@@ -446,13 +587,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CWGNALETTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4300CF2E4DB72D817FE1FCE3 /* [CP] Check Pods Manifest.lock */ = {
@@ -461,13 +605,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CWGNALET-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		59304955CA020CA47E5BF36D /* [CP] Copy Pods Resources */ = {
@@ -476,9 +623,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CWGNALET/Pods-CWGNALET-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -491,9 +645,32 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CWGNALET/Pods-CWGNALET-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -521,13 +698,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CWGNALETUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F4CB6366A36A5D394AC3E17C /* [CP] Copy Pods Resources */ = {
@@ -567,17 +747,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4AD82FC201537F300758B8C /* ReporterVC.m in Sources */,
 				C4D0A95D1F9EA9A90092E513 /* Users.m in Sources */,
+				C46406A3203E2F4000D35AB4 /* NSString+TextDirectionality.m in Sources */,
+				C4548CC5203F892D000442E5 /* GFGeoHashQuery.m in Sources */,
 				C4D0A9521F9D50950092E513 /* AuthVC.m in Sources */,
+				C461AD87203E5294008B6B37 /* GenReqVC.m in Sources */,
 				C4891A1020138722003D4DC1 /* RequestVCR.m in Sources */,
+				C4548CC2203F892D000442E5 /* GeoFire.m in Sources */,
+				C4892BA32071A540000A5685 /* CCActivityHUD.m in Sources */,
 				C4D0A9121F9D04A30092E513 /* ViewController.m in Sources */,
+				C4548CC3203F892D000442E5 /* GFBase32Utils.m in Sources */,
+				C4AD82F32015168800758B8C /* MyRequestsVC.m in Sources */,
+				C4AD82F92015214300758B8C /* RequestDetailsVC.m in Sources */,
+				C46406A1203E2F4000D35AB4 /* JVFloatLabeledTextField.m in Sources */,
+				C46E93D0206DDB870043A870 /* IssuesCells.m in Sources */,
 				C4D0A9551F9D750F0092E513 /* AuthService.m in Sources */,
 				C4D0A94A1F9D10550092E513 /* Case.m in Sources */,
+				C4AD82F620151A2600758B8C /* MyRequestCells.m in Sources */,
 				C4D0A94D1F9D1B0C0092E513 /* Contants.swift in Sources */,
 				C4EF258C1FC2312C0007B7D9 /* HomeVC.m in Sources */,
+				C4548CC4203F892D000442E5 /* GFGeoHash.m in Sources */,
+				C4892BA42071A540000A5685 /* UIImage+animatedGIF.m in Sources */,
 				C4D0A95A1F9DD4B00092E513 /* DBService.m in Sources */,
+				C4E8C85A2040384300CE2066 /* ReportAnnotation.m in Sources */,
+				C46406A2203E2F4000D35AB4 /* JVFloatLabeledTextView.m in Sources */,
 				C4D0A91D1F9D04A30092E513 /* main.m in Sources */,
 				C4D0A90F1F9D04A30092E513 /* AppDelegate.m in Sources */,
+				C4AD82FF20153EC900758B8C /* NearbyVC.m in Sources */,
+				C4548CC6203F892D000442E5 /* GFQuery.m in Sources */,
+				C46E93CD206DC5870043A870 /* MapsVC.m in Sources */,
 				C4EF25931FC2465B0007B7D9 /* CategoryVC.m in Sources */,
 				C4EF25891FC22E7D0007B7D9 /* HMPGCells.m in Sources */,
 			);
@@ -745,6 +944,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MB46J93Q7Z;
@@ -753,6 +953,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codesworth.CWGNALET;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "CWGNALET/Resources/CWGNALET-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -766,6 +967,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MB46J93Q7Z;
@@ -774,6 +976,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codesworth.CWGNALET;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "CWGNALET/Resources/CWGNALET-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

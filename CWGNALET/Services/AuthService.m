@@ -34,13 +34,41 @@
 
             [[NSUserDefaults standardUserDefaults]setObject:user.uid forKey:CS.C.USER_UID__];
             [[NSUserDefaults standardUserDefaults]setBool:YES forKey:CS.C.DID_LOG_IN_];
-            onComplete();
+            onComplete(nil);
             
+        }
+    }];
+}
+
+
+
+-(void)signInAnonymously:(ExecuteAfterFinish)onComplete errorCompletion:(Execute)completion
+{
+    [[FIRAuth auth]signInAnonymouslyWithCompletion:^(FIRUser * _Nullable user, NSError * _Nullable error) {
+        if (user && error == nil) {
+            [[NSUserDefaults standardUserDefaults] setObject:user.uid forKey:CS.C.USER_UID__];
+            Users* auser = [Users new];
+            [auser setPhone:nil];
+            [auser setLastname:@""];
+            [auser setUid:user.uid];
+            [auser setUsername:@"Anonymous"];
+            [auser setEmail:@""];
+            [auser setImgLnk:@""];
+            [auser setGcPoints:nil];
+            [NSKeyedArchiver archiveRootObject:auser toFile:[DBService userDataFilePath]];
+            [[NSUserDefaults standardUserDefaults]setObject:auser.username forKey:CS.C.REF_ID_USERNAME];
+            [[DBService service]saveUserAccount:auser onF:^(id  _Nullable object) {
+                onComplete(object);
+            }];
+            
+        }else{
+            completion();
         }
     }];
 }
 -(void)signUp:(NSString* _Nonnull)email password:(NSString* _Nonnull)passsword username:(NSString*)name onComplete:(ExecuteAfterFinish _Nullable)onComplete view:(UIViewController* _Nullable)controller stop:(Execute)animationBlock
 {
+    
     [[FIRAuth auth] createUserWithEmail:email password:passsword completion:^(FIRUser * _Nullable user, NSError * _Nullable error) {
         if (error != nil){
             //handle error
@@ -54,7 +82,7 @@
                 [[NSUserDefaults standardUserDefaults] setObject:user.uid forKey:CS.C.USER_UID__];
                     [[NSUserDefaults standardUserDefaults]setBool:YES forKey:CS.C.DID_LOG_IN_];
                 [[DBService service] saveUser:user.uid username:name imgLnk:@""];
-                onComplete();
+                onComplete(nil);
                 
                 //optional sign in
             }

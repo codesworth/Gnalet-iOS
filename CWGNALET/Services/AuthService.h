@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "Predefs.h"
+#import "TypeDefs.h"
 
 @import Firebase;
 @import FirebaseAuth;
 
-typedef void (^ExecuteAfterFinish)(void);
-typedef void(^Execute)(void);
+
 
 @interface AuthService : NSObject
 
@@ -24,6 +24,7 @@ typedef void(^Execute)(void);
 -(void)signUp:(NSString* _Nonnull)email password:(NSString* _Nonnull)passsword username:(NSString*_Nonnull)name onComplete:(ExecuteAfterFinish _Nullable)onComplete view:(UIViewController* _Nullable)controller  stop:(nullable Execute)animationBlock;
 
 -(void)fb_signOut:(nullable Execute)onComplete;
+-(void)signInAnonymously:(ExecuteAfterFinish _Nullable )onComplete errorCompletion:(Execute _Nullable )completion;
 
 //-(void)fb_Auth_Password_Reset:(NSString* _Nonnull)email c:(UIViewController* _Nonnull)controller e:(nullable Execute)onComplete;
 

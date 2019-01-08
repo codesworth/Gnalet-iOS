@@ -14,6 +14,11 @@
 #import "DBService.h"
 #import "HMPGCells.h"
 #import "Case.h"
+#import "JVFloatLabeledTextView.h"
+#import "JVFloatLabeledTextField.h"
+#import "GeoFire.h"
+#import "ReportAnnotation.h"
+#import "MyRequestCells.h"
 
 
 #endif /* Predefs_h */

@@ -21,8 +21,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [FIRApp configure];
-    [GIDSignIn sharedInstance].clientID = [FIRApp defaultApp].options.clientID;
-    [GIDSignIn sharedInstance].delegate = self;
+    [GMSServices provideAPIKey:@"AIzaSyCJvBRpT48C6sMWaaepPTIRWNVBoOLCTw8"];
+    [GMSPlacesClient provideAPIKey:@"AIzaSyCJvBRpT48C6sMWaaepPTIRWNVBoOLCTw8"];
+    
+    //[GIDSignIn sharedInstance].clientID = [FIRApp defaultApp].options.clientID;
+    //[GIDSignIn sharedInstance].delegate = self;
     //[_window setRootViewController:[self rootViewController]];
     // Override point for customization after application launch.
     

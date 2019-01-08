@@ -11,8 +11,8 @@
 
 
 typedef NS_ENUM(NSUInteger,Status) {
-    opened = 0,
-    closed,
+    unsolved = 0,
+    solved,
     reopened,
     unknown,
     classified,
@@ -36,16 +36,23 @@ typedef NS_ENUM(NSUInteger, CaseCategory) {
 @property (nonatomic, nonnull, strong)NSString* c_id;
 @property (nonatomic, nonnull, strong)NSString* c_title;
 @property (nonatomic, nonnull, strong)NSString* c_description;
-@property (nonatomic, nonnull, strong)NSString* c_imageLink;
+@property (nonatomic, nullable, strong)NSString* c_imageLink;
 @property (nonatomic, nonnull, strong)NSString* sup_body;
-@property (nonatomic)NSUInteger upVotes;
-@property (nonatomic)NSUInteger downVotes;
+@property (nonatomic,nonnull, strong)NSDictionary* upVotes;
+@property (nonatomic, nonnull, strong)NSDictionary* downVotes;
 @property (nonatomic)Status status;
 @property (nonatomic, nonnull, strong)NSString* reporter;
-@property(nonatomic)CaseCategory  category;
-
+@property (nonatomic, nonnull, strong)NSString* reporterUID;
+@property(nonatomic, strong,nullable)NSDictionary*  extras;
+@property (nonatomic, nonnull, strong)NSDate* date;
+@property (nonatomic) double latitude;
+@property (nonatomic) double longitude;
+@property (nonatomic,strong) NSString* location;
+//@property (nonatomic) NSUInteger upcount;
+//@property (nonatomic) NSUInteger dwncount;
 -(instancetype _Nonnull )init;
 
--(instancetype _Nonnull )initWithDocument:(NSMutableDictionary* _Nonnull)doc;
+-(instancetype _Nonnull )initWithDocument:(NSDictionary* _Nonnull)doc;
+
 
 @end
